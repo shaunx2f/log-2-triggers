@@ -8,6 +8,7 @@ Python script that can be used to convert a log file into list of pulls with ass
 - To add input/output file/folder arguments
 - To add support for 4-man duties like criterion
 - To add X/Y/Z and X-Heading/Y-Heading/Z-Heading to help identify abilities that are aimed at specific positions
+- Parse log line and store RSV Data so they can be used for encrypted casts/debuffs
 
 **Usage**
 1. Add *.log files into the input folder that you want to be parsed
