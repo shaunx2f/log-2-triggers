@@ -1,6 +1,7 @@
 # log-2-triggers
 
 Python script that can be used to convert a log file into list of pulls with associated triggers<br>
+Uses XIVAPI to find jobs of players when they use an action so triggers can mention which role got which debuff etc.
 
 **TODO/Limitations**
 - Currently only covers 8-man and 24-man alliance duties
