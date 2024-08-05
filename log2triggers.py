@@ -336,7 +336,7 @@ def add_ability_to_pull(network_ability: NetworkAbility):
     if not pull_in_progress:
         return
 
-    if not party.in_party(network_ability.source_id) and not party.in_party(network_ability.target_id):
+    if not party.in_party(network_ability.source_id):
         pull.add_event(network_ability.timestamp, network_ability)
         pull.add_ability(network_ability.timestamp, network_ability)
 
@@ -403,6 +403,9 @@ def should_clear_party_list(log_line: LogLine):
 
 # File and Pull Maker
 log_file_list = glob.glob('input/*.log')
+
+if len(log_file_list) == 0:
+    print("Could not locate any log files for parsing :(\n1. Are there any log files in the folder?\n2. Are you running the script INSIDE the log2trigger folder?")
 
 for log_file in log_file_list:
 
