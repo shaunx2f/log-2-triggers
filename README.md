@@ -4,6 +4,7 @@ Python script that can be used to convert a log file into list of pulls with ass
 
 **TODO/Limitations**
 - Currently only covers 8-man and 24-man alliance duties
+- Reliant on " has ended" to know if player has left the instance, will change this later if I find a better approach without having to maintain a list of every "non-duty" zone
 - There is some strange behaviour in alliance raid where you could see player casts in the count but I do filter them out before making triggers
 - To add input/output file/folder arguments
 - To add support for 4-man duties like criterion
